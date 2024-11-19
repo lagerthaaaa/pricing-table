@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .offer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .plan {
+            padding: 2.5rem;
+            margin: 12px;
+            color: #C0C0C0;
+            background-color: #404040;
+            background-color: #333333;
+            border-radius: 8px;
+            text-align: center;
+            overflow: hidden;
+            /* border: 2px solid white; */
+        }
+
+        .plan h2 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .plan .price {
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+
+        .plan ul.details {
+            list-style-type: none;
+            text-align: left;        
+        }
+
+        .plan ul.details li {
+            margin: 8px;
+        }
+
+        .plan .fas {
+            margin-right: 4px;
+        }
+
+        .plan li .fa-check {
+            color: #33cc33;
+            margin-right: 2px;
+        }
+
+        .plan li .fa-times {
+            color: #ff1a1a;
+            margin-right: 2px;
+        }
+
+        .plan a {
+            display: block;
+            margin-top: 1.5rem;
+            padding: 11px 32 px;
+            color: white;
+            background-color: #3E672D;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        .plan.top {
+            border: 2px solid #6ab04c;
+        }
+
+        .listing-badges {
+            position: relative;
+        }
+
+        .plan.top span {
+            padding: 4px;
+            position: absolute;
+            left: -74px;
+            top: -20px;
+            width: 130px;
+            transform: rotate(-45deg);
+            background-color: #6ab04c;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="offer">
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">5$ / Mo</div>
+            <ul class="details">
+                <li> <i class="fas fa-check"></i> 3 websites </li>
+                <li> <i class="fas fa-check"></i> 1 user </li>
+                <li> <i class="fas fa-check"></i> 1 email account </li>
+                <li> <i class="fas fa-check"></i> 300MB disk space </li>
+                <li> <i class="fas fa-check"></i> 1x 100MB SQL DB </li>
+                <li> <i class="fas fa-check"></i> 2GB Bandwidth </li>
+                <li> <i class="fas fa-times"></i> No priority support </li>
+            </ul>
+            <a href="#">Subscribe</a>
+        </div>
+
+        <div class="plan">
+            <h2>Standard</h2>
+            <div class="price">25$ / Mo</div>
+            <ul class="details">
+                <li> <i class="fas fa-check"></i> 15 websites </li>
+                <li> <i class="fas fa-check"></i> 10 users </li>
+                <li> <i class="fas fa-check"></i> 10 email accounts </li>
+                <li> <i class="fas fa-check"></i> 32 GB SSD space </li>
+                <li> <i class="fas fa-check"></i> 3x 300MB SQL DB </li>
+                <li> <i class="fas fa-check"></i> 200GB Bandwidth </li>
+                <li> <i class="fas fa-check"></i> Priority support </li>
+            </ul>
+            <a href="#">Subscribe</a>
+        </div>
+
+        <div class="plan top">
+            <div class="listing-badges">
+                <span>Popular</span>
+            </div>
+            <h2>Premium</h2>
+            <div class="price">50$ / Mo</div>
+            <ul class="details">
+                <li> <i class="fas fa-check"></i> Unlimited websites </li>
+                <li> <i class="fas fa-check"></i> 100 users </li>
+                <li> <i class="fas fa-check"></i> 100 email accounts </li>
+                <li> <i class="fas fa-check"></i> 900GB SSD space </li>
+                <li> <i class="fas fa-check"></i> 10x 500MB SQL DB </li>
+                <li> <i class="fas fa-check"></i> 2TB Bandwidth </li>
+                <li> <i class="fas fa-check"></i> VIP priority support </li>
+            </ul>
+            <a href="#">Subscribe</a>
+        </div>
+    </div>
+</body>
+</html>
